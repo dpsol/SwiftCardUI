@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,72 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Lesson4Ex" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Girl" translatesAutoresizingMaskIntoConstraints="NO" id="Y4W-wF-NDC">
+                                <rect key="frame" x="0.0" y="44" width="375" height="504"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="253" verticalHuggingPriority="251" image="Close" translatesAutoresizingMaskIntoConstraints="NO" id="f1q-vb-AMc">
+                                <rect key="frame" x="321" y="44" width="34" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="f1q-vb-AMc" secondAttribute="height" multiplier="1:1" id="7rx-C6-CYO"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;I'd love to meet you&quot;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MHK-HE-tOl">
+                                <rect key="frame" x="20" y="588" width="335" height="27"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yo soy una persona afds gfhg ryrt dfdfg dfgf dfgdfg errt dfgdfg sdfsdf" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MDj-bO-hmJ">
+                                <rect key="frame" x="20" y="625" width="335" height="44.333333333333371"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Chat" translatesAutoresizingMaskIntoConstraints="NO" id="afP-vf-zgu">
+                                <rect key="frame" x="262" y="435" width="93" height="93"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Joanna" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QIC-op-HMQ">
+                                <rect key="frame" x="20" y="44" width="291" height="33.666666666666657"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="MHK-HE-tOl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="4Py-rL-BhE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="f1q-vb-AMc" secondAttribute="trailing" constant="20" id="8AR-Sx-Lgk"/>
+                            <constraint firstItem="f1q-vb-AMc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="BZl-GE-hAY"/>
+                            <constraint firstAttribute="trailing" secondItem="Y4W-wF-NDC" secondAttribute="trailing" id="F2H-5Q-b3I"/>
+                            <constraint firstItem="QIC-op-HMQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="FNP-6Q-vda"/>
+                            <constraint firstItem="MDj-bO-hmJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Iz4-Zt-VGY"/>
+                            <constraint firstItem="Y4W-wF-NDC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="RDd-IZ-A9s"/>
+                            <constraint firstItem="f1q-vb-AMc" firstAttribute="leading" secondItem="QIC-op-HMQ" secondAttribute="trailing" constant="10" id="Sqx-I7-X6r"/>
+                            <constraint firstItem="QIC-op-HMQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="dIN-yN-SwU"/>
+                            <constraint firstItem="MHK-HE-tOl" firstAttribute="top" secondItem="Y4W-wF-NDC" secondAttribute="bottom" constant="40" id="eRa-Ko-uhj"/>
+                            <constraint firstItem="Y4W-wF-NDC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="gtJ-iI-kqd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MHK-HE-tOl" secondAttribute="trailing" constant="20" id="hIY-Qg-xfg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MDj-bO-hmJ" secondAttribute="trailing" constant="20" id="lkW-aG-ibf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="afP-vf-zgu" secondAttribute="trailing" constant="20" id="mfa-Ky-f9a"/>
+                            <constraint firstItem="afP-vf-zgu" firstAttribute="bottom" secondItem="Y4W-wF-NDC" secondAttribute="bottom" constant="-20" id="vsg-JO-MF0"/>
+                            <constraint firstItem="MDj-bO-hmJ" firstAttribute="top" secondItem="MHK-HE-tOl" secondAttribute="bottom" constant="10" id="xnY-wp-w5d"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="97.767857142857139"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Chat" width="93" height="93"/>
+        <image name="Close" width="34" height="34"/>
+        <image name="Girl" width="414" height="504"/>
+    </resources>
 </document>
